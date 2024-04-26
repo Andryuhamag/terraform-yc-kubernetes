@@ -1,1 +1,3 @@
-# terraform-yc-kubernetes
+# Terraform модуль для создания `Kubernetes` кластера в `Yandex Cloud`
+
+## Данный проект написан исключительно в образовательных целях

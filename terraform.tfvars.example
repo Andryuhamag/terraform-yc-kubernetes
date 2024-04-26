@@ -1,0 +1,40 @@
+#============= cloud variables ============#
+sa_id       = "your service account id"
+sa_key_file = "path to your key.json file"
+cloud_id    = "your cloud id"
+folder_id   = "your folder id"
+
+#========== Kubernetes variables ==========#
+k8s_sg_name             = "k8s-security-group"
+k8s_network_name        = "k8s-network"
+k8s_network_description = "Kubernetes network"
+
+k8s_subnets = [
+  {
+    name        = "k8s-subnet-a"
+    description = "Subnet for ru-central1-a zone"
+    zone        = "ru-central1-a"
+    cidr        = ["10.0.1.0/28"]
+  }
+  #   ,
+  #   {
+  #     name        = "k8s-subnet-b"
+  #     description = "Subnet for ru-central1-b zone"
+  #     zone        = "ru-central1-b"
+  #     cidr        = ["10.0.2.0/28"]
+  #   },
+  #   {
+  #     name        = "k8s-subnet-d"
+  #     description = "Subnet for ru-central1-d zone"
+  #     zone        = "ru-central1-d"
+  #     cidr        = ["10.0.4.0/28"]
+  #   }
+]
+
+k8s_cluster_name           = "k8s"
+k8s_cluster_description    = "Simple Kubernetes cluster"
+k8s_cluster_version        = "1.29"
+k8s_cluster_zone           = "ru-central1-a"
+k8s_node_group_name        = "k8s-node-group"
+k8s_node_group_description = "Kubernetes node group"
+k8s_node_platform_id       = "standard-v2"
