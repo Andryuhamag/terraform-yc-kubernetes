@@ -4,5 +4,4 @@ module "network" {
   network_description = var.k8s_network_description
   sg_name             = var.k8s_sg_name
   subnets             = var.k8s_subnets
-
 }

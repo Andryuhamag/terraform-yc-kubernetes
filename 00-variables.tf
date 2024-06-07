@@ -2,7 +2,6 @@
 variable "sa_key_file" {
   description = "Path to service account key file"
   type        = string
-
 }
 variable "cloud_id" {
   description = "The Cloud ID"
@@ -11,11 +10,6 @@ variable "cloud_id" {
 
 variable "folder_id" {
   description = "The Folder ID"
-  type        = string
-}
-
-variable "sa_id" {
-  description = "Service account ID"
   type        = string
 }
 
@@ -72,7 +66,7 @@ variable "k8s_cluster_zone" {
 
 variable "k8s_cluster_public_ip" {
   type    = bool
-  default = true
+  default = false
 }
 
 variable "k8s_auto_upgrade" {

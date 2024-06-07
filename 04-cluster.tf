@@ -1,4 +1,4 @@
-resource "yandex_kubernetes_cluster" "k8s_zonal_cluster" {
+resource "yandex_kubernetes_cluster" "k8s_cluster" {
   name        = var.k8s_cluster_name
   description = var.k8s_cluster_description
   network_id  = module.network.network_id
@@ -36,7 +36,7 @@ resource "yandex_kubernetes_cluster" "k8s_zonal_cluster" {
 }
 
 resource "yandex_kubernetes_node_group" "k8s_node_group" {
-  cluster_id  = yandex_kubernetes_cluster.k8s_zonal_cluster.id
+  cluster_id  = yandex_kubernetes_cluster.k8s_cluster.id
   name        = var.k8s_node_group_name
   description = var.k8s_node_group_description
   version     = var.k8s_cluster_version

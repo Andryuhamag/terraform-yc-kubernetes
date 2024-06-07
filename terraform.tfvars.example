@@ -1,5 +1,4 @@
 #============= cloud variables ============#
-sa_id       = "your service account id"
 sa_key_file = "path to your key.json file"
 cloud_id    = "your cloud id"
 folder_id   = "your folder id"
